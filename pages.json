@@ -1,0 +1,61 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "综合搜索"
+			}
+		}, {
+			"path": "pages/kbqa/index",
+			"style": {
+				"navigationBarTitleText": "智能问答",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/info/paperInfo",
+			"style": {
+				"navigationBarTitleText": "论文详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/info/expertInfo",
+			"style": {
+				"navigationBarTitleText": "人才详情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#66ccff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/index-selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/kbqa/index",
+				"iconPath": "static/center.png",
+				"selectedIconPath": "static/center-selected.png",
+				"text": "智能问答"
+			}
+		]
+	}
+}
